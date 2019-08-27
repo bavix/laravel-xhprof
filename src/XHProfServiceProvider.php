@@ -24,6 +24,7 @@ class XHProfServiceProvider extends ServiceProvider
             'xhprof'
         );
 
+        $this->app->singleton(XHProfMiddleware::class);
         $this->app->singleton(XHProfService::class);
 
         /**
