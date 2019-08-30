@@ -3,5 +3,5 @@
 return [
     'path' => '/opt/xhprof',
     'name' => 'xhprof',
-    'freq' => 0.01, // 1%
+    'freq' => 1 / 1000,
 ];
