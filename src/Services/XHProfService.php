@@ -4,7 +4,7 @@ namespace Bavix\XHProf\Services;
 
 use Bavix\XHProf\Providers\ProviderInterface;
 use Bavix\XHProf\Providers\XHProfProvider;
-use Bavix\XHProf\Providers\EmptyProvider;
+use function extension_loaded;
 use function mt_getrandmax;
 use function mt_rand;
 
@@ -21,28 +21,38 @@ class XHProfService
      */
     public function __construct()
     {
-        $freq = config('xhprof.freq', 0.1);
-        if (extension_loaded('xhprof') && ($freq >= (mt_rand() / mt_getrandmax()))) {
+        if (!extension_loaded('xhprof')) {
+            return;
+        }
+
+        if (!config('xhprof.enabled', false)) {
+            return;
+        }
+
+        $freq = config('xhprof.freq', 0.01);
+        if ($freq >= (mt_rand() / mt_getrandmax())) {
             $this->provider = new XHProfProvider();
-        } else {
-            $this->provider = new EmptyProvider();
         }
     }
 
     /**
      * @return void
      */
-    public function enable()
+    public function enable(): void
     {
-        $this->provider->enable();
+        if ($this->provider) {
+            $this->provider->enable();
+        }
     }
 
     /**
      * @return void
      */
-    public function disable()
+    public function disable(): void
     {
-        $this->provider->disable();
+        if ($this->provider) {
+            $this->provider->disable();
+        }
     }
 
 }

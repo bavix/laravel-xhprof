@@ -3,8 +3,8 @@
 namespace Bavix\XHProf\Providers;
 
 use XHProfRuns_Default;
-use function xhprof_enable;
 use function xhprof_disable;
+use function xhprof_enable;
 
 class XHProfProvider implements ProviderInterface
 {
