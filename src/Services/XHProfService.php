@@ -3,6 +3,7 @@
 namespace Bavix\XHProf\Services;
 
 use Bavix\XHProf\Providers\ProviderInterface;
+use Bavix\XHProf\Providers\TidewaysProvider;
 use Bavix\XHProf\Providers\XHProfProvider;
 use function extension_loaded;
 use function mt_getrandmax;
@@ -21,7 +22,7 @@ class XHProfService
      */
     public function __construct()
     {
-        if (!extension_loaded('xhprof')) {
+        if (!extension_loaded(config('xhprof.extension_name', 'xhprof'))) {
             return;
         }
 
@@ -31,7 +32,15 @@ class XHProfService
 
         $freq = config('xhprof.freq', 0.01);
         if ($freq >= (mt_rand() / mt_getrandmax())) {
-            $this->provider = new XHProfProvider();
+            switch (config('xhprof.provider', XHProfProvider::class)) {
+                case TidewaysProvider::class:
+                    $this->provider = new TidewaysProvider();
+                    break;
+                default:
+                case XHProfProvider::class:
+                    $this->provider = new XHProfProvider();
+                    break;
+            }
         }
     }
 
