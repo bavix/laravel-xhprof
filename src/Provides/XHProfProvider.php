@@ -26,7 +26,7 @@ class XHProfProvider implements ProviderInterface
     public function disable()
     {
         $data = xhprof_disable();
-        $runs = new XHProfRuns_Default();
+        $runs = new XHProfRuns_Default(config('xhprof.output_dir', null));
         $runs->save_run($data, config('xhprof.name'));
     }
 
