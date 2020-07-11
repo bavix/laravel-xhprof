@@ -16,7 +16,7 @@ Laravel XHProf - Library for profiling in battle.
 * **Vendor**: bavix
 * **Package**: Laravel XHProf
 * **Version**: [![Latest Stable Version](https://poser.pugx.org/bavix/laravel-xhprof/v/stable)](https://packagist.org/packages/bavix/laravel-xhprof)
-* **Laravel Version**: `5.5`, `5.6`, `5.7`, `5.8`, `6.0`
+* **Laravel Version**: `5.5`, `5.6`, `5.7`, `5.8`, `6.0`, `7.0`
 * **PHP Version**: 7.1+ 
 * **[Composer](https://getcomposer.org/):** `composer require bavix/laravel-xhprof`
 
