@@ -11,7 +11,7 @@
 [![License](https://poser.pugx.org/bavix/laravel-xhprof/license)](https://packagist.org/packages/bavix/laravel-xhprof)
 [![composer.lock](https://poser.pugx.org/bavix/laravel-xhprof/composerlock)](https://packagist.org/packages/bavix/laravel-xhprof)
 
-Laravel XHProf - Library for profiling in battle.
+Laravel XHProf - Library for profiling in production.
 
 * **Vendor**: bavix
 * **Package**: Laravel XHProf
