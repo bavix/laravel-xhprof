@@ -90,7 +90,7 @@ return [
 
 Enjoy!
 
-I wrote the instructions @wdda, thank you. https://github.com/bavix/laravel-xhprof/issues/9#issuecomment-703891348 
+I wrote the [instructions](https://github.com/bavix/laravel-xhprof/issues/9#issuecomment-703891348) [@wdda](https://github.com/wdda), thank you. 
 
 ---
 Supported by
