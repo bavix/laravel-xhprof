@@ -14,9 +14,6 @@ class XHProfProvider implements ProviderInterface
      */
     public function enable()
     {
-        $path = config('xhprof.path');
-        include_once $path . '/xhprof_lib/utils/xhprof_lib.php';
-        include_once $path . '/xhprof_lib/utils/xhprof_runs.php';
         xhprof_enable(config('xhprof.flags', 0));
     }
 
@@ -26,8 +23,13 @@ class XHProfProvider implements ProviderInterface
     public function disable()
     {
         $data = xhprof_disable();
-        $runs = new XHProfRuns_Default(config('xhprof.output_dir', null));
-        $runs->save_run($data, config('xhprof.name'));
+
+        $run_id = config('xhprof.run_id', null) ?? uniqid();
+
+        file_put_contents(
+                config('xhprof.output_dir', '/tmp') . '/' . $run_id . '.' . config('xhprof.name') . '.xhprof',
+                serialize($data)
+                );
     }
 
 }
