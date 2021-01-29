@@ -86,7 +86,10 @@ return [
 ];
 ```
 
-10. Reload page Laravel site and go to xhprof.domain.ru
+10. Add following line in Laravel's provider section of app.php
+```Bavix\XHProf\XHProfServiceProvider::class,```
+
+11. Reload page Laravel site and go to xhprof.domain.ru
 
 Enjoy!
 
