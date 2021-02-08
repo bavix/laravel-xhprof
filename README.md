@@ -86,7 +86,10 @@ return [
 ];
 ```
 
-10. Reload page Laravel site and go to xhprof.domain.ru
+10. If you have old laravel (<=5.4), register the service provider by add this line `\Bavix\XHProf\XHProfServiceProvider::class` in your `/config/app.php`.
+If laravel 5.5 and older then skip this step.
+
+11. Reload page Laravel site and go to xhprof.domain.ru
 
 Enjoy!
 
