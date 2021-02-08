@@ -86,7 +86,8 @@ return [
 ];
 ```
 
-10. Register the Service provider by add this line `\Bavix\XHProf\XHProfServiceProvider::class` in your `/config/app.php`
+10. If you have old laravel (<=5.4), register the service provider by add this line `\Bavix\XHProf\XHProfServiceProvider::class` in your `/config/app.php`.
+If laravel 5.5 and older then skip this step.
 
 11. Reload page Laravel site and go to xhprof.domain.ru
 
