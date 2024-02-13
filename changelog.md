@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.0.5 - 2024-02-13
+
+### What's Changed
+
+* Add support laravel ^11
+* Bump bavix/.github from 0.1.6 to 0.1.9 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/laravel-xhprof/pull/15
+* Bump bavix/.github from 0.1.9 to 0.2.0 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/laravel-xhprof/pull/16
+* Bump bavix/.github from 0.2.0 to 0.2.1 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/laravel-xhprof/pull/17
+* Bump bavix/.github from 0.2.1 to 0.2.2 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/laravel-xhprof/pull/18
+* Bump bavix/.github from 0.2.2 to 0.2.3 by [@dependabot](https://github.com/dependabot) in https://github.com/bavix/laravel-xhprof/pull/19
+
+**Full Changelog**: https://github.com/bavix/laravel-xhprof/compare/2.0.4...2.0.5
+
 ## 2.0.4 - 2024-01-17
 
 **Full Changelog**: https://github.com/bavix/laravel-xhprof/compare/2.0.3...2.0.4
@@ -16,18 +29,16 @@ Add support laravel ^9.0
 
 ## 2.0.1 - 2021-02-08
 
-Added support for laravel 5.3 @sahilpurav @khanakia
+Added support for laravel 5.3 [@sahilpurav](https://github.com/sahilpurav) @khanakia
 
 ## 2.0.0 - 2020-11-25
 
 - Generate run_id() in the config, so that another part of code can put a link/header in the page for easily accessing the profiled data.
 - Drop the dependency on the xhprof_lib files, as the needed code is just a file_put_contents of the serialized data.
 
-Thanks you @peterverraedt
+Thanks you [@peterverraedt](https://github.com/peterverraedt)
 
 ## 1.3.0 - 2020-08-31
-
-
 
 ## 1.2.2 - 2020-06-23
 
@@ -47,21 +58,10 @@ Add support laravel 7.0
 
 ## 1.0.0 - 2019-09-06
 
-
-
 ## 0.0.4 - 2019-08-27
-
-
 
 ## 0.0.3 - 2019-08-27
 
-
-
 ## 0.0.2 - 2019-08-26
 
-
-
 ## 0.0.1 - 2019-08-26
-
-
-
