@@ -94,8 +94,3 @@ If laravel 5.5 and older then skip this step.
 Enjoy!
 
 I wrote the [instructions](https://github.com/bavix/laravel-xhprof/issues/9#issuecomment-703891348) [@wdda](https://github.com/wdda), thank you. 
-
----
-Supported by
-
-[![Supported by JetBrains](https://cdn.rawgit.com/bavix/development-through/46475b4b/jetbrains.svg)](https://www.jetbrains.com/)
