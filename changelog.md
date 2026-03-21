@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.0 - 2026-03-21
+
+### What's Changed
+
+* Bump bavix/.github from 0.3.3 to 0.4.0 by [@dependabot](https://github.com/dependabot)[bot] in https://github.com/bavix/laravel-xhprof/pull/27
+* Bump bavix/.github/.github/workflows/changelog.yml from 0.4.0 to 0.4.1 by [@dependabot](https://github.com/dependabot)[bot] in https://github.com/bavix/laravel-xhprof/pull/28
+* Add support laravel 13
+
+**Full Changelog**: https://github.com/bavix/laravel-xhprof/compare/2.0.6...2.1.0
+
 ## 2.0.5 - 2024-02-13
 
 ### What's Changed
@@ -29,7 +39,7 @@ Add support laravel ^9.0
 
 ## 2.0.1 - 2021-02-08
 
-Added support for laravel 5.3 [@sahilpurav](https://github.com/sahilpurav) @khanakia
+Added support for laravel 5.3 [@sahilpurav](https://github.com/sahilpurav) [@khanakia](https://github.com/khanakia)
 
 ## 2.0.0 - 2020-11-25
 
